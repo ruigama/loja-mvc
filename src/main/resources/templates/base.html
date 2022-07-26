@@ -1,0 +1,31 @@
+<head th:fragment="head">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta charset="UTF-8"/>
+	<!-- CSS only -->
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Source+Code+Pro&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+	<style>
+		.Logo-container{
+			background-color: #47bcff;
+			color: #fff;
+		}
+		.fonte-loja{
+			font-family: 'Lobster', cursive;
+			font-size: 2.5rem;
+		}
+		.fonte-login{
+			font-family: 'Source Code Pro', monospace;
+			font-size: 1.5rem;
+		}
+	</style>
+</head>
+
+<div th:fragment="logo" class="Logo-container mb-3 p-3 d-flex justify-content-between">
+	<span class="fonte-loja">Loja-Virtual</span>
+	<span class="fonte-login mt-2">Login</span>
+</div>
+
+<div th:fragment="jumbotron(valor)" class="jumbotron mb-0">
+	<h1 class="display-4" th:text="${valor}"></h1>
+</div>
